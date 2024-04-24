@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="mzk.portal.utils.ExtentReport"></listener>
+		<listener class-name="mzk.portal.utils.AllureListners"></listener>
+	</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="mzk.PatientPortal.BaseClass.PaymentCategoryTest"/>
+      <class name="mzk.PatientPortal.BaseClass.EmergencyContactTest"/>
+      <class name="mzk.PatientPortal.BaseClass.FamilyMembersTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

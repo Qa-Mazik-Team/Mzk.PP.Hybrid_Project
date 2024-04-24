@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-24T17:19:39 IST" name="Suite" finished-at="2024-04-24T17:20:29 IST" duration-ms="49845">
+    <groups>
+    </groups>
+    <test started-at="2024-04-24T17:19:39 IST" name="Test" finished-at="2024-04-24T17:20:29 IST" duration-ms="49845">
+      <class name="mzk.PatientPortal.BaseClass.FamilyMembersTest">
+        <test-method signature="PatientFamilyMember()[pri:0, instance:mzk.PatientPortal.BaseClass.FamilyMembersTest@7134b8a7]" started-at="2024-04-24T17:20:21 IST" name="PatientFamilyMember" finished-at="2024-04-24T17:20:29 IST" duration-ms="7773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PatientFamilyMember -->
+      </class> <!-- mzk.PatientPortal.BaseClass.FamilyMembersTest -->
+      <class name="mzk.PatientPortal.BaseClass.PaymentCategoryTest">
+        <test-method is-config="true" signature="initBrowser()[pri:0, instance:mzk.PatientPortal.BaseClass.PaymentCategoryTest@6bcb12e6]" started-at="2024-04-24T17:19:31 IST" name="initBrowser" finished-at="2024-04-24T17:19:39 IST" duration-ms="7672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method signature="PatientPaymentCategory()[pri:0, instance:mzk.PatientPortal.BaseClass.PaymentCategoryTest@6bcb12e6]" started-at="2024-04-24T17:19:40 IST" name="PatientPaymentCategory" finished-at="2024-04-24T17:20:05 IST" duration-ms="25717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PatientPaymentCategory -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mzk.PatientPortal.BaseClass.PaymentCategoryTest@6bcb12e6]" started-at="2024-04-24T17:20:30 IST" name="tearDown" finished-at="2024-04-24T17:20:30 IST" duration-ms="538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mzk.PatientPortal.BaseClass.PaymentCategoryTest -->
+      <class name="mzk.PatientPortal.BaseClass.EmergencyContactTest">
+        <test-method signature="PoratlEmergencyContact()[pri:0, instance:mzk.PatientPortal.BaseClass.EmergencyContactTest@7efa3f63]" started-at="2024-04-24T17:20:06 IST" name="PoratlEmergencyContact" finished-at="2024-04-24T17:20:21 IST" duration-ms="15505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PoratlEmergencyContact -->
+      </class> <!-- mzk.PatientPortal.BaseClass.EmergencyContactTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
