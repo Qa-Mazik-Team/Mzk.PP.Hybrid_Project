@@ -1,10 +1,5 @@
 package mzk.PatientPortal.BaseClass;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -15,11 +10,8 @@ import mzk.portal.utils.Selenium_Functions;
 
 public class FamilyMembersTest extends BaseTestClass {
 
-	private static final Logger logger = LogManager.getLogger(FamilyMembersTest.class);
-
 	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void PatientFamilyMember() {
-		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		System.err.println("---------------------------FamilyMembers test Start--------------------------------");
 		logger.info("Starting FamilyMembersDetails test...");
 		LoginTestClass.getInstance(dr).login();
@@ -27,6 +19,7 @@ public class FamilyMembersTest extends BaseTestClass {
 		logger.info("Hitting the profile button");
 		FamilyMembers.getInstance(dr).FamilymembersButton();
 		logger.info("Hitting the Familymembers Button");
+
 		SoftAssert Assert = new SoftAssert();
 
 		String EXpecteName = "Family Members";

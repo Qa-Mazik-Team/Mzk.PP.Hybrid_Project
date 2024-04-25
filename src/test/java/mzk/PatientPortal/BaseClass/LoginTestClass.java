@@ -1,10 +1,5 @@
 package mzk.PatientPortal.BaseClass;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.asserts.SoftAssert;
 
@@ -13,8 +8,6 @@ import mzk.portal.utils.Readfile;
 import mzk.portal.utils.Selenium_Functions;
 
 public class LoginTestClass extends BaseTestClass {
-	String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-	private static final Logger logger = LogManager.getLogger(LoginTestClass.class);
 
 	private static LoginTestClass instance = null;
 
@@ -46,7 +39,7 @@ public class LoginTestClass extends BaseTestClass {
 
 		SoftAssert Assert = new SoftAssert();
 
-		String EXpecteName = "Ayesha A"; 
+		String EXpecteName = "Ayesha A";
 		String ActualName = Login.getInstance(dr).getProfileName().getText();
 
 		if (ActualName.equalsIgnoreCase(EXpecteName)) {
@@ -56,7 +49,7 @@ public class LoginTestClass extends BaseTestClass {
 			Selenium_Functions.drawBorder(Login.getInstance(dr).getProfileName());
 			Selenium_Functions.screenshot("./Screenshots/" + timeStamp + "Dashboard.png");
 		}
-
+		System.err.println("---------------------------Login test End--------------------------------");
 		Assert.assertAll();
 	}
 }

@@ -9,12 +9,69 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">49,845</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">8</td><td class="num">0</td><td class="num attn">2</td><td class="num attn">1</td><td class="num">147,948</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">mzk.PatientPortal.BaseClass.EmergencyContactTest</td><td><a href="#m0">PoratlEmergencyContact</a></td><td rowspan="1">1713959406160</td><td rowspan="1">15505</td></tr><tr class="passedodd"><td rowspan="1">mzk.PatientPortal.BaseClass.FamilyMembersTest</td><td><a href="#m1">PatientFamilyMember</a></td><td rowspan="1">1713959421673</td><td rowspan="1">7773</td></tr><tr class="passedeven"><td rowspan="1">mzk.PatientPortal.BaseClass.PaymentCategoryTest</td><td><a href="#m2">PatientPaymentCategory</a></td><td rowspan="1">1713959380206</td><td rowspan="1">25717</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">mzk.PatientPortal.BaseClass.InternationalPatientTest</td><td><a href="#m0">InternationalPatientRegistration</a></td><td rowspan="1">1714031730456</td><td rowspan="1">12630</td></tr><tr><th colspan="4">Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">mzk.PatientPortal.BaseClass.InternationalPatientTest</td><td><a href="#m1">InternationalPatientRegistration</a></td><td rowspan="1">1714031727717</td><td rowspan="1">2722</td></tr><tr class="retriedodd"><td rowspan="1">mzk.PatientPortal.BaseClass.RegistrationTest</td><td><a href="#m2">registerPatient</a></td><td rowspan="1">1714031772985</td><td rowspan="1">10536</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">mzk.PatientPortal.BaseClass.EmergencyContactTest</td><td><a href="#m3">PoratlEmergencyContact</a></td><td rowspan="1">1714031743641</td><td rowspan="1">21180</td></tr><tr class="passedodd"><td rowspan="1">mzk.PatientPortal.BaseClass.FamilyMembersTest</td><td><a href="#m4">PatientFamilyMember</a></td><td rowspan="1">1714031764828</td><td rowspan="1">8153</td></tr><tr class="passedeven"><td rowspan="1">mzk.PatientPortal.BaseClass.ForgotEmailTest</td><td><a href="#m5">ForgotEmailID</a></td><td rowspan="1">1714031681431</td><td rowspan="1">13118</td></tr><tr class="passedodd"><td rowspan="1">mzk.PatientPortal.BaseClass.PaymentCategoryTest</td><td><a href="#m6">PatientPaymentCategory</a></td><td rowspan="1">1714031710301</td><td rowspan="1">17410</td></tr><tr class="passedeven"><td rowspan="1">mzk.PatientPortal.BaseClass.PersonalDetailsTest</td><td><a href="#m7">UserPersonalDetails</a></td><td rowspan="1">1714031809894</td><td rowspan="1">19052</td></tr><tr class="passedodd"><td rowspan="1">mzk.PatientPortal.BaseClass.ProvideAccessTest</td><td><a href="#m8">UserProvideAccess</a></td><td rowspan="1">1714031694834</td><td rowspan="1">15458</td></tr><tr class="passedeven"><td rowspan="1">mzk.PatientPortal.BaseClass.RegistrationTest</td><td><a href="#m9">registerPatient</a></td><td rowspan="1">1714031783534</td><td rowspan="1">4489</td></tr><tr class="passedodd"><td rowspan="1">mzk.PatientPortal.BaseClass.RequestAccessTest</td><td><a href="#m10">UserRequestAccess</a></td><td rowspan="1">1714031788029</td><td rowspan="1">21861</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">mzk.PatientPortal.BaseClass.EmergencyContactTest#PoratlEmergencyContact</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">mzk.PatientPortal.BaseClass.FamilyMembersTest#PatientFamilyMember</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">mzk.PatientPortal.BaseClass.PaymentCategoryTest#PatientPaymentCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">mzk.PatientPortal.BaseClass.InternationalPatientTest#InternationalPatientRegistration</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Both Text deos&apos;t Matched expected [Connect WithUs] but found [Connect With Us]
+	at mzk.PatientPortal.BaseClass.InternationalPatientTest.InternationalPatientRegistration(InternationalPatientTest.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">mzk.PatientPortal.BaseClass.InternationalPatientTest#InternationalPatientRegistration</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;HYDL-001375A&apos;, ip: &apos;172.22.11.67&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Users\BANDI~1.UJJ\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b8cea758c4f33c434e5d22c382097ff
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
+	at mzk.PatientPortal.elements.InternationalPatient.Email(InternationalPatient.java:85)
+	at mzk.PatientPortal.BaseClass.InternationalPatientTest.InternationalPatientRegistration(InternationalPatientTest.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">mzk.PatientPortal.BaseClass.RegistrationTest#registerPatient</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@class=&apos;page-headingh1 mb-0&apos;]&quot;}
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;HYDL-001375A&apos;, ip: &apos;172.22.11.67&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Users\BANDI~1.UJJ\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b8cea758c4f33c434e5d22c382097ff
+*** Element info: {Using=xpath, value=//h2[@class=&apos;page-headingh1 mb-0&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.getText(Unknown Source)
+	at mzk.PatientPortal.BaseClass.RegistrationTest.registerPatient(RegistrationTest.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">mzk.PatientPortal.BaseClass.EmergencyContactTest#PoratlEmergencyContact</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">mzk.PatientPortal.BaseClass.FamilyMembersTest#PatientFamilyMember</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">mzk.PatientPortal.BaseClass.ForgotEmailTest#ForgotEmailID</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">mzk.PatientPortal.BaseClass.PaymentCategoryTest#PatientPaymentCategory</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">mzk.PatientPortal.BaseClass.PersonalDetailsTest#UserPersonalDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">mzk.PatientPortal.BaseClass.ProvideAccessTest#UserProvideAccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">mzk.PatientPortal.BaseClass.RegistrationTest#registerPatient</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">mzk.PatientPortal.BaseClass.RequestAccessTest#UserRequestAccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

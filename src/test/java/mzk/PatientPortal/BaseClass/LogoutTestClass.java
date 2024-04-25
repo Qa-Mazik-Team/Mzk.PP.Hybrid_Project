@@ -1,10 +1,5 @@
 package mzk.PatientPortal.BaseClass;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.asserts.SoftAssert;
 
@@ -13,9 +8,6 @@ import mzk.PatientPortal.elements.Logout;
 import mzk.portal.utils.Selenium_Functions;
 
 public class LogoutTestClass extends BaseTestClass {
-	String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-	private static final Logger logger = LogManager.getLogger(LogoutTestClass.class);
-
 	private static LogoutTestClass instance = null;
 
 	public static LogoutTestClass getInstance(RemoteWebDriver remoteWebDriver) {
@@ -36,7 +28,7 @@ public class LogoutTestClass extends BaseTestClass {
 
 		SoftAssert Assert = new SoftAssert();
 
-		String EXpecteName = "New User ? Sign up here"; 
+		String EXpecteName = "New User ? Sign up here";
 		String ActualName = Login.getInstance(dr).getSignUp().getText();
 
 		if (ActualName.equalsIgnoreCase(EXpecteName)) {

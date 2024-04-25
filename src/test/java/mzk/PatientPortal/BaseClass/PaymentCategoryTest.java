@@ -1,10 +1,5 @@
 package mzk.PatientPortal.BaseClass;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -17,15 +12,12 @@ import mzk.portal.utils.Selenium_Functions;
 
 public class PaymentCategoryTest extends BaseTestClass {
 
-	private static final Logger logger = LogManager.getLogger(PaymentCategoryTest.class);
-
 	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void PatientPaymentCategory() {
 
 		System.err.println("---------------------------PaymentCategory test Start--------------------------------");
 
 		logger.info("Starting PaymentCategory test...");
-		String timeStamp = new SimpleDateFormat("dd.MM.yyyy.HH.mm.ss").format(new Date());
 
 		LoginTestClass.getInstance(dr).login();
 		PaymentCategory.getInstance(dr).profilebutton();

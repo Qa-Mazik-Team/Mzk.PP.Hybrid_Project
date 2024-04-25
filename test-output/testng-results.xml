@@ -1,37 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
+<testng-results retried="2" ignored="16" total="27" passed="8" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-24T17:19:39 IST" name="Suite" finished-at="2024-04-24T17:20:29 IST" duration-ms="49845">
+  <suite started-at="2024-04-25T13:24:41 IST" name="Suite" finished-at="2024-04-25T13:27:08 IST" duration-ms="147948">
     <groups>
     </groups>
-    <test started-at="2024-04-24T17:19:39 IST" name="Test" finished-at="2024-04-24T17:20:29 IST" duration-ms="49845">
+    <test started-at="2024-04-25T13:24:41 IST" name="Test" finished-at="2024-04-25T13:27:08 IST" duration-ms="147948">
       <class name="mzk.PatientPortal.BaseClass.FamilyMembersTest">
-        <test-method signature="PatientFamilyMember()[pri:0, instance:mzk.PatientPortal.BaseClass.FamilyMembersTest@7134b8a7]" started-at="2024-04-24T17:20:21 IST" name="PatientFamilyMember" finished-at="2024-04-24T17:20:29 IST" duration-ms="7773" status="PASS">
+        <test-method signature="PatientFamilyMember()[pri:0, instance:mzk.PatientPortal.BaseClass.FamilyMembersTest@696db620]" started-at="2024-04-25T13:26:04 IST" name="PatientFamilyMember" finished-at="2024-04-25T13:26:12 IST" duration-ms="8153" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PatientFamilyMember -->
       </class> <!-- mzk.PatientPortal.BaseClass.FamilyMembersTest -->
       <class name="mzk.PatientPortal.BaseClass.PaymentCategoryTest">
-        <test-method is-config="true" signature="initBrowser()[pri:0, instance:mzk.PatientPortal.BaseClass.PaymentCategoryTest@6bcb12e6]" started-at="2024-04-24T17:19:31 IST" name="initBrowser" finished-at="2024-04-24T17:19:39 IST" duration-ms="7672" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initBrowser -->
-        <test-method signature="PatientPaymentCategory()[pri:0, instance:mzk.PatientPortal.BaseClass.PaymentCategoryTest@6bcb12e6]" started-at="2024-04-24T17:19:40 IST" name="PatientPaymentCategory" finished-at="2024-04-24T17:20:05 IST" duration-ms="25717" status="PASS">
+        <test-method signature="PatientPaymentCategory()[pri:0, instance:mzk.PatientPortal.BaseClass.PaymentCategoryTest@726934e2]" started-at="2024-04-25T13:25:10 IST" name="PatientPaymentCategory" finished-at="2024-04-25T13:25:27 IST" duration-ms="17410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PatientPaymentCategory -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:mzk.PatientPortal.BaseClass.PaymentCategoryTest@6bcb12e6]" started-at="2024-04-24T17:20:30 IST" name="tearDown" finished-at="2024-04-24T17:20:30 IST" duration-ms="538" status="PASS">
+      </class> <!-- mzk.PatientPortal.BaseClass.PaymentCategoryTest -->
+      <class name="mzk.PatientPortal.BaseClass.RegistrationTest">
+        <test-method retried="true" signature="registerPatient()[pri:0, instance:mzk.PatientPortal.BaseClass.RegistrationTest@6968c1d6]" started-at="2024-04-25T13:26:12 IST" name="registerPatient" finished-at="2024-04-25T13:26:23 IST" duration-ms="10536" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@class='page-headingh1 mb-0']"}
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Users\BANDI~1.UJJ\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b8cea758c4f33c434e5d22c382097ff
+*** Element info: {Using=xpath, value=//h2[@class='page-headingh1 mb-0']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@class='page-headingh1 mb-0']"}
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Users\BANDI~1.UJJ\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b8cea758c4f33c434e5d22c382097ff
+*** Element info: {Using=xpath, value=//h2[@class='page-headingh1 mb-0']}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy32.getText(Unknown Source)
+at mzk.PatientPortal.BaseClass.RegistrationTest.registerPatient(RegistrationTest.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- mzk.PatientPortal.BaseClass.PaymentCategoryTest -->
+        </test-method> <!-- registerPatient -->
+        <test-method signature="registerPatient()[pri:0, instance:mzk.PatientPortal.BaseClass.RegistrationTest@6968c1d6]" started-at="2024-04-25T13:26:23 IST" name="registerPatient" finished-at="2024-04-25T13:26:28 IST" duration-ms="4489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerPatient -->
+      </class> <!-- mzk.PatientPortal.BaseClass.RegistrationTest -->
+      <class name="mzk.PatientPortal.BaseClass.ProvideAccessTest">
+        <test-method signature="UserProvideAccess()[pri:0, instance:mzk.PatientPortal.BaseClass.ProvideAccessTest@72976b4]" started-at="2024-04-25T13:24:54 IST" name="UserProvideAccess" finished-at="2024-04-25T13:25:10 IST" duration-ms="15458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserProvideAccess -->
+      </class> <!-- mzk.PatientPortal.BaseClass.ProvideAccessTest -->
       <class name="mzk.PatientPortal.BaseClass.EmergencyContactTest">
-        <test-method signature="PoratlEmergencyContact()[pri:0, instance:mzk.PatientPortal.BaseClass.EmergencyContactTest@7efa3f63]" started-at="2024-04-24T17:20:06 IST" name="PoratlEmergencyContact" finished-at="2024-04-24T17:20:21 IST" duration-ms="15505" status="PASS">
+        <test-method signature="PoratlEmergencyContact()[pri:0, instance:mzk.PatientPortal.BaseClass.EmergencyContactTest@27abb6ca]" started-at="2024-04-25T13:25:43 IST" name="PoratlEmergencyContact" finished-at="2024-04-25T13:26:04 IST" duration-ms="21180" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PoratlEmergencyContact -->
       </class> <!-- mzk.PatientPortal.BaseClass.EmergencyContactTest -->
+      <class name="mzk.PatientPortal.BaseClass.ForgotEmailTest">
+        <test-method is-config="true" signature="initBrowser()[pri:0, instance:mzk.PatientPortal.BaseClass.ForgotEmailTest@a09303]" started-at="2024-04-25T13:24:30 IST" name="initBrowser" finished-at="2024-04-25T13:24:40 IST" duration-ms="10103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method signature="ForgotEmailID()[pri:0, instance:mzk.PatientPortal.BaseClass.ForgotEmailTest@a09303]" started-at="2024-04-25T13:24:41 IST" name="ForgotEmailID" finished-at="2024-04-25T13:24:54 IST" duration-ms="13118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForgotEmailID -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mzk.PatientPortal.BaseClass.ForgotEmailTest@a09303]" started-at="2024-04-25T13:27:09 IST" name="tearDown" finished-at="2024-04-25T13:27:10 IST" duration-ms="539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- mzk.PatientPortal.BaseClass.ForgotEmailTest -->
+      <class name="mzk.PatientPortal.BaseClass.InternationalPatientTest">
+        <test-method retried="true" signature="InternationalPatientRegistration()[pri:0, instance:mzk.PatientPortal.BaseClass.InternationalPatientTest@1319bc2a]" started-at="2024-04-25T13:25:27 IST" name="InternationalPatientRegistration" finished-at="2024-04-25T13:25:30 IST" duration-ms="2722" status="SKIP">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Users\BANDI~1.UJJ\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b8cea758c4f33c434e5d22c382097ff]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Users\BANDI~1.UJJ\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b8cea758c4f33c434e5d22c382097ff
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
+at mzk.PatientPortal.elements.InternationalPatient.Email(InternationalPatient.java:85)
+at mzk.PatientPortal.BaseClass.InternationalPatientTest.InternationalPatientRegistration(InternationalPatientTest.java:57)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InternationalPatientRegistration -->
+        <test-method signature="InternationalPatientRegistration()[pri:0, instance:mzk.PatientPortal.BaseClass.InternationalPatientTest@1319bc2a]" started-at="2024-04-25T13:25:30 IST" name="InternationalPatientRegistration" finished-at="2024-04-25T13:25:43 IST" duration-ms="12630" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Both Text deos't Matched expected [Connect WithUs] but found [Connect With Us]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Both Text deos't Matched expected [Connect WithUs] but found [Connect With Us]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at mzk.PatientPortal.BaseClass.InternationalPatientTest.InternationalPatientRegistration(InternationalPatientTest.java:82)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InternationalPatientRegistration -->
+      </class> <!-- mzk.PatientPortal.BaseClass.InternationalPatientTest -->
+      <class name="mzk.PatientPortal.BaseClass.RequestAccessTest">
+        <test-method signature="UserRequestAccess()[pri:0, instance:mzk.PatientPortal.BaseClass.RequestAccessTest@7d986d83]" started-at="2024-04-25T13:26:28 IST" name="UserRequestAccess" finished-at="2024-04-25T13:26:49 IST" duration-ms="21861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserRequestAccess -->
+      </class> <!-- mzk.PatientPortal.BaseClass.RequestAccessTest -->
+      <class name="mzk.PatientPortal.BaseClass.PersonalDetailsTest">
+        <test-method signature="UserPersonalDetails()[pri:0, instance:mzk.PatientPortal.BaseClass.PersonalDetailsTest@77f991c]" started-at="2024-04-25T13:26:49 IST" name="UserPersonalDetails" finished-at="2024-04-25T13:27:08 IST" duration-ms="19052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserPersonalDetails -->
+      </class> <!-- mzk.PatientPortal.BaseClass.PersonalDetailsTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

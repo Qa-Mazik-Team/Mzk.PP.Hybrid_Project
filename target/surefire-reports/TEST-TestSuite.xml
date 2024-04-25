@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="370.269" tests="6" errors="0" skipped="3" failures="3">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="960.09" tests="18" errors="0" skipped="9" failures="9">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\WINDOWS\TEMP\surefire10703117394761753902\surefirebooter1589071293038430768.jar C:\Windows\Temp\surefire10703117394761753902 2024-04-24T17-31-14_546-jvmRun1 surefire2328881074284349060tmp surefire_09955040936442724179tmp"/>
+    <property name="sun.java.command" value="C:\WINDOWS\TEMP\surefire9851368433448839473\surefirebooter3661897216104041917.jar C:\Windows\Temp\surefire9851368433448839473 2024-04-25T16-24-30_152-jvmRun1 surefire12984012112484968819tmp surefire_014828891863425182660tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Project\MzkGitHub\target\test-classes;D:\Project\MzkGitHub\target\classes;C:\WINDOWS\system32\config\systemprofile\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-testng\2.13.0\allure-testng-2.13.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-java-commons\2.13.0\allure-java-commons-2.13.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\qameta\allure\allure-model\2.13.0\allure-model-2.13.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\tika\tika-core\1.20\tika-core-1.20.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\jooq\joor-java-8\0.9.10\joor-java-8-0.9.10.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-java\3.14.0\selenium-java-3.14.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-api\3.14.0\selenium-api-3.14.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.14.0\selenium-chrome-driver-3.14.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.14.0\selenium-edge-driver-3.14.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.14.0\selenium-firefox-driver-3.14.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.14.0\selenium-ie-driver-3.14.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.14.0\selenium-opera-driver-3.14.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.14.0\selenium-remote-driver-3.14.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.14.0\selenium-safari-driver-3.14.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\seleniumhq\selenium\selenium-support\3.14.0\selenium-support-3.14.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpclient\4.5.5\httpclient-4.5.5.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpcore\4.4.9\httpcore-4.4.9.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\squareup\okhttp3\okhttp\3.10.0\okhttp-3.10.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\squareup\okio\okio\1.14.1\okio-1.14.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\poi\poi\3.17\poi-3.17.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-collections4\4.1\commons-collections4-4.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\poi\poi-ooxml\3.17\poi-ooxml-3.17.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.17\poi-ooxml-schemas-3.17.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\aventstack\extentreports\3.1.2\extentreports-3.1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\jsoup\jsoup\1.9.2\jsoup-1.9.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-lang3\3.0\commons-lang3-3.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\io\github\bonigarcia\webdrivermanager\5.7.0\webdrivermanager-5.7.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java\3.3.5\docker-java-3.3.5.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-core\3.3.5\docker-java-core-3.3.5.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-api\3.3.5\docker-java-api-3.3.5.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.5\docker-java-transport-httpclient5-3.3.5.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\docker-java\docker-java-transport\3.3.5\docker-java-transport-3.3.5.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\commons\commons-compress\1.26.0\commons-compress-1.26.0.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\logging\log4j\log4j-core\2.14.1\log4j-core-2.14.1.jar;C:\WINDOWS\system32\config\systemprofile\.m2\repository\org\apache\logging\log4j\log4j-api\2.14.1\log4j-api-2.14.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\WINDOWS\TEMP\surefire10703117394761753902\surefirebooter1589071293038430768.jar"/>
+    <property name="surefire.real.class.path" value="C:\WINDOWS\TEMP\surefire9851368433448839473\surefirebooter3661897216104041917.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.2+13-LTS-58"/>
@@ -59,31 +59,32 @@
     <property name="java.class.version" value="65.0"/>
   </properties>
   <testcase name="PoratlEmergencyContact" classname="mzk.PatientPortal.BaseClass.EmergencyContactTest" time="0">
-    <skipped message="Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (a32e0e9365a5ee8025ea2ac6d9df8717)] -&gt; xpath: //a[@href=&apos;profile&apos;]] (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;HYDL-001375A&apos;, ip: &apos;172.22.11.67&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58838}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a32e0e9365a5ee8025ea2ac6d9df8717"/>
-    <system-out><![CDATA[17:31:27.486 [main] INFO  mzk.PatientPortal.BaseClass.EmergencyContactTest - Starting EmergencyContact test...
-17:31:27.497 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Starting login test...
-17:31:34.994 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Patient Email Address is Entered
-17:31:35.343 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Hitting the Send OTP Button
-17:31:36.547 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Entered the OTP for the codeOtp1
-17:31:36.661 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Entered the OTP for the codeOtp2
-17:31:36.749 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Entered the OTP for the codeOtp3
-17:31:36.853 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Entered the OTP for the codeOtp4
-17:31:36.978 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Hitting the login Button
+    <skipped message="Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on WINDOWS (93deac0454cff8c8d107f55bcc61099b)] -&gt; xpath: //a[@href=&apos;profile&apos;]] (tried for 30 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;HYDL-001375A&apos;, ip: &apos;172.22.11.67&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53468}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 93deac0454cff8c8d107f55bcc61099b"/>
+    <system-out><![CDATA[16:24:45.710 [main] INFO  mzk.PatientPortal.BaseClass.EmergencyContactTest - Starting EmergencyContact test...
+16:24:45.725 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Starting login test...
+16:24:55.380 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Patient Email Address is Entered
+16:24:55.724 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Hitting the Send OTP Button
+16:24:57.056 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Entered the OTP for the codeOtp1
+16:24:57.174 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Entered the OTP for the codeOtp2
+16:24:57.420 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Entered the OTP for the codeOtp3
+16:24:57.507 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Entered the OTP for the codeOtp4
+16:24:57.639 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Hitting the login Button
 ]]></system-out>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-Starting ChromeDriver 124.0.6367.78 (a087f2dd364ddd58b9c016ef1bf563d2bc138711-refs/branch-heads/6367@{#954}) on port 55758
+Starting ChromeDriver 124.0.6367.78 (a087f2dd364ddd58b9c016ef1bf563d2bc138711-refs/branch-heads/6367@{#954}) on port 48769
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Apr 24, 2024 5:31:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Apr 25, 2024 4:24:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ---------------------------EmergencyContact test Start--------------------------------
 ---------------------------Login test Start--------------------------------
+---------------------------Login test End--------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="PoratlEmergencyContact" classname="mzk.PatientPortal.BaseClass.EmergencyContactTest" time="62.978">
+  <testcase name="PoratlEmergencyContact" classname="mzk.PatientPortal.BaseClass.EmergencyContactTest" time="62.891">
     <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&apos;Email&apos;] (tried for 60 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='Email'] (tried for 60 second(s) with 500 milliseconds interval)
 	at mzk.PatientPortal.BaseClass.EmergencyContactTest.PoratlEmergencyContact(EmergencyContactTest.java:26)
 Caused by: org.openqa.selenium.NoSuchElementException: 
@@ -94,8 +95,8 @@ System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os
 Driver info: driver.version: unknown
 	at mzk.PatientPortal.BaseClass.EmergencyContactTest.PoratlEmergencyContact(EmergencyContactTest.java:26)
 </failure>
-    <system-out><![CDATA[17:32:11.530 [main] INFO  mzk.PatientPortal.BaseClass.EmergencyContactTest - Starting EmergencyContact test...
-17:32:11.531 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Starting login test...
+    <system-out><![CDATA[16:25:33.164 [main] INFO  mzk.PatientPortal.BaseClass.EmergencyContactTest - Starting EmergencyContact test...
+16:25:33.164 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Starting login test...
 ]]></system-out>
     <system-err><![CDATA[---------------------------EmergencyContact test Start--------------------------------
 ---------------------------Login test Start--------------------------------
@@ -103,14 +104,14 @@ Driver info: driver.version: unknown
   </testcase>
   <testcase name="PatientFamilyMember" classname="mzk.PatientPortal.BaseClass.FamilyMembersTest" time="0">
     <skipped message="Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&apos;Email&apos;] (tried for 60 second(s) with 500 milliseconds interval)"/>
-    <system-out><![CDATA[17:33:14.511 [main] INFO  mzk.PatientPortal.BaseClass.FamilyMembersTest - Starting FamilyMembersDetails test...
-17:33:14.511 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Starting login test...
+    <system-out><![CDATA[16:26:36.062 [main] INFO  mzk.PatientPortal.BaseClass.FamilyMembersTest - Starting FamilyMembersDetails test...
+16:26:36.062 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Starting login test...
 ]]></system-out>
-    <system-err><![CDATA[---------------------------FamilyMembers_06 test Start--------------------------------
+    <system-err><![CDATA[---------------------------FamilyMembers test Start--------------------------------
 ---------------------------Login test Start--------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="PatientFamilyMember" classname="mzk.PatientPortal.BaseClass.FamilyMembersTest" time="62.963">
+  <testcase name="PatientFamilyMember" classname="mzk.PatientPortal.BaseClass.FamilyMembersTest" time="62.9">
     <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&apos;Email&apos;] (tried for 60 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='Email'] (tried for 60 second(s) with 500 milliseconds interval)
 	at mzk.PatientPortal.BaseClass.FamilyMembersTest.PatientFamilyMember(FamilyMembersTest.java:25)
 Caused by: org.openqa.selenium.NoSuchElementException: 
@@ -121,23 +122,75 @@ System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os
 Driver info: driver.version: unknown
 	at mzk.PatientPortal.BaseClass.FamilyMembersTest.PatientFamilyMember(FamilyMembersTest.java:25)
 </failure>
-    <system-out><![CDATA[17:34:17.429 [main] INFO  mzk.PatientPortal.BaseClass.FamilyMembersTest - Starting FamilyMembersDetails test...
-17:34:17.429 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Starting login test...
+    <system-out><![CDATA[16:27:38.988 [main] INFO  mzk.PatientPortal.BaseClass.FamilyMembersTest - Starting FamilyMembersDetails test...
+16:27:38.989 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Starting login test...
 ]]></system-out>
-    <system-err><![CDATA[---------------------------FamilyMembers_06 test Start--------------------------------
+    <system-err><![CDATA[---------------------------FamilyMembers test Start--------------------------------
 ---------------------------Login test Start--------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="ForgotEmailID" classname="mzk.PatientPortal.BaseClass.ForgotEmailTest" time="0">
+    <skipped message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;Forgot Email/Mobile Number?&apos;]&quot;}&#10;  (Session info: chrome=124.0.6367.78)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;HYDL-001375A&apos;, ip: &apos;172.22.11.67&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53468}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 93deac0454cff8c8d107f55bcc61099b&#10;*** Element info: {Using=xpath, value=//*[text()=&apos;Forgot Email/Mobile Number?&apos;]}"/>
+    <system-out><![CDATA[16:28:41.900 [main] INFO  mzk.PatientPortal.BaseClass.ForgotEmailTest - Starting ForgotEmailID test...
+]]></system-out>
+    <system-err><![CDATA[---------------------------ForgotEmail test Start--------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="ForgotEmailID" classname="mzk.PatientPortal.BaseClass.ForgotEmailTest" time="10.066">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;Forgot Email/Mobile Number?&apos;]&quot;}&#10;  (Session info: chrome=124.0.6367.78)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;&#10;System info: host: &apos;HYDL-001375A&apos;, ip: &apos;172.22.11.67&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53468}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 93deac0454cff8c8d107f55bcc61099b&#10;*** Element info: {Using=xpath, value=//*[text()=&apos;Forgot Email/Mobile Number?&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Forgot Email/Mobile Number?']"}
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53468}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 93deac0454cff8c8d107f55bcc61099b
+*** Element info: {Using=xpath, value=//*[text()='Forgot Email/Mobile Number?']}
+	at mzk.PatientPortal.BaseClass.ForgotEmailTest.ForgotEmailID(ForgotEmailTest.java:28)
+</failure>
+    <system-out><![CDATA[16:28:51.951 [main] INFO  mzk.PatientPortal.BaseClass.ForgotEmailTest - Starting ForgotEmailID test...
+]]></system-out>
+    <system-err><![CDATA[---------------------------ForgotEmail test Start--------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="InternationalPatientRegistration" classname="mzk.PatientPortal.BaseClass.InternationalPatientTest" time="0">
+    <skipped message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@href=&apos;/signup&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)"/>
+    <system-out><![CDATA[16:29:02.018 [main] INFO  mzk.PatientPortal.BaseClass.InternationalPatientTest - Starting InternationalPatientRegistration test...
+]]></system-out>
+    <system-err><![CDATA[---------------------------InternationalPatient test Start--------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="InternationalPatientRegistration" classname="mzk.PatientPortal.BaseClass.InternationalPatientTest" time="41.23">
+    <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@href=&apos;/signup&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@href='/signup']' (tried for 30 second(s) with 500 milliseconds interval)
+	at mzk.PatientPortal.BaseClass.InternationalPatientTest.InternationalPatientRegistration(InternationalPatientTest.java:32)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@href='/signup']"}
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53468}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 93deac0454cff8c8d107f55bcc61099b
+*** Element info: {Using=xpath, value=//*[@href='/signup']}
+	at mzk.PatientPortal.BaseClass.InternationalPatientTest.InternationalPatientRegistration(InternationalPatientTest.java:32)
+</failure>
+    <system-out><![CDATA[16:29:43.297 [main] INFO  mzk.PatientPortal.BaseClass.InternationalPatientTest - Starting InternationalPatientRegistration test...
+]]></system-out>
+    <system-err><![CDATA[---------------------------InternationalPatient test Start--------------------------------
 ]]></system-err>
   </testcase>
   <testcase name="PatientPaymentCategory" classname="mzk.PatientPortal.BaseClass.PaymentCategoryTest" time="0">
     <skipped message="Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&apos;Email&apos;] (tried for 60 second(s) with 500 milliseconds interval)"/>
-    <system-out><![CDATA[17:35:20.399 [main] INFO  mzk.PatientPortal.BaseClass.PaymentCategoryTest - Starting PaymentCategory test...
-17:35:20.399 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Starting login test...
+    <system-out><![CDATA[16:30:24.527 [main] INFO  mzk.PatientPortal.BaseClass.PaymentCategoryTest - Starting PaymentCategory test...
+16:30:24.528 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Starting login test...
 ]]></system-out>
     <system-err><![CDATA[---------------------------PaymentCategory test Start--------------------------------
 ---------------------------Login test Start--------------------------------
 ]]></system-err>
   </testcase>
-  <testcase name="PatientPaymentCategory" classname="mzk.PatientPortal.BaseClass.PaymentCategoryTest" time="62.936">
+  <testcase name="PatientPaymentCategory" classname="mzk.PatientPortal.BaseClass.PaymentCategoryTest" time="62.914">
     <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&apos;Email&apos;] (tried for 60 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='Email'] (tried for 60 second(s) with 500 milliseconds interval)
 	at mzk.PatientPortal.BaseClass.PaymentCategoryTest.PatientPaymentCategory(PaymentCategoryTest.java:30)
 Caused by: org.openqa.selenium.NoSuchElementException: 
@@ -148,10 +201,118 @@ System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os
 Driver info: driver.version: unknown
 	at mzk.PatientPortal.BaseClass.PaymentCategoryTest.PatientPaymentCategory(PaymentCategoryTest.java:30)
 </failure>
-    <system-out><![CDATA[17:36:23.347 [main] INFO  mzk.PatientPortal.BaseClass.PaymentCategoryTest - Starting PaymentCategory test...
-17:36:23.348 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Starting login test...
+    <system-out><![CDATA[16:31:27.398 [main] INFO  mzk.PatientPortal.BaseClass.PaymentCategoryTest - Starting PaymentCategory test...
+16:31:27.398 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Starting login test...
 ]]></system-out>
     <system-err><![CDATA[---------------------------PaymentCategory test Start--------------------------------
+---------------------------Login test Start--------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="UserPersonalDetails" classname="mzk.PatientPortal.BaseClass.PersonalDetailsTest" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&apos;Email&apos;] (tried for 60 second(s) with 500 milliseconds interval)"/>
+    <system-out><![CDATA[16:32:30.315 [main] INFO  mzk.PatientPortal.BaseClass.PersonalDetailsTest - Starting UserPersonalDetails test...
+16:32:30.316 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Starting login test...
+]]></system-out>
+    <system-err><![CDATA[---------------------------PersonalDetails test Start--------------------------------
+---------------------------Login test Start--------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="UserPersonalDetails" classname="mzk.PatientPortal.BaseClass.PersonalDetailsTest" time="62.939">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&apos;Email&apos;] (tried for 60 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='Email'] (tried for 60 second(s) with 500 milliseconds interval)
+	at mzk.PatientPortal.BaseClass.PersonalDetailsTest.UserPersonalDetails(PersonalDetailsTest.java:28)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //*[@id='Email']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: unknown
+	at mzk.PatientPortal.BaseClass.PersonalDetailsTest.UserPersonalDetails(PersonalDetailsTest.java:28)
+</failure>
+    <system-out><![CDATA[16:33:33.200 [main] INFO  mzk.PatientPortal.BaseClass.PersonalDetailsTest - Starting UserPersonalDetails test...
+16:33:33.200 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Starting login test...
+]]></system-out>
+    <system-err><![CDATA[---------------------------PersonalDetails test Start--------------------------------
+---------------------------Login test Start--------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="UserProvideAccess" classname="mzk.PatientPortal.BaseClass.ProvideAccessTest" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&apos;Email&apos;] (tried for 60 second(s) with 500 milliseconds interval)"/>
+    <system-out><![CDATA[16:34:36.147 [main] INFO  mzk.PatientPortal.BaseClass.ProvideAccessTest - Starting UserProvideAccess test...
+16:34:36.148 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Starting login test...
+]]></system-out>
+    <system-err><![CDATA[---------------------------ProvideAccess test Start--------------------------------
+---------------------------Login test Start--------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="UserProvideAccess" classname="mzk.PatientPortal.BaseClass.ProvideAccessTest" time="63.019">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&apos;Email&apos;] (tried for 60 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='Email'] (tried for 60 second(s) with 500 milliseconds interval)
+	at mzk.PatientPortal.BaseClass.ProvideAccessTest.UserProvideAccess(ProvideAccessTest.java:29)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //*[@id='Email']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: unknown
+	at mzk.PatientPortal.BaseClass.ProvideAccessTest.UserProvideAccess(ProvideAccessTest.java:29)
+</failure>
+    <system-out><![CDATA[16:35:38.997 [main] INFO  mzk.PatientPortal.BaseClass.ProvideAccessTest - Starting UserProvideAccess test...
+16:35:38.998 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Starting login test...
+]]></system-out>
+    <system-err><![CDATA[---------------------------ProvideAccess test Start--------------------------------
+---------------------------Login test Start--------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="registerPatient" classname="mzk.PatientPortal.BaseClass.RegistrationTest" time="0">
+    <skipped message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@href=&apos;/signup&apos;]&apos; (tried for 40 second(s) with 500 milliseconds interval)"/>
+    <system-out><![CDATA[16:36:42.025 [main] INFO  mzk.PatientPortal.BaseClass.RegistrationTest - Starting registerPatient test...
+]]></system-out>
+    <system-err><![CDATA[---------------------------Registration test Start--------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="registerPatient" classname="mzk.PatientPortal.BaseClass.RegistrationTest" time="51.744">
+    <failure message="Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@href=&apos;/signup&apos;]&apos; (tried for 40 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@href='/signup']' (tried for 40 second(s) with 500 milliseconds interval)
+	at mzk.PatientPortal.BaseClass.RegistrationTest.registerPatient(RegistrationTest.java:33)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@href='/signup']"}
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53468}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 93deac0454cff8c8d107f55bcc61099b
+*** Element info: {Using=xpath, value=//*[@href='/signup']}
+	at mzk.PatientPortal.BaseClass.RegistrationTest.registerPatient(RegistrationTest.java:33)
+</failure>
+    <system-out><![CDATA[16:37:33.802 [main] INFO  mzk.PatientPortal.BaseClass.RegistrationTest - Starting registerPatient test...
+]]></system-out>
+    <system-err><![CDATA[---------------------------Registration test Start--------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="UserRequestAccess" classname="mzk.PatientPortal.BaseClass.RequestAccessTest" time="0">
+    <skipped message="Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&apos;Email&apos;] (tried for 60 second(s) with 500 milliseconds interval)"/>
+    <system-out><![CDATA[16:38:25.549 [main] INFO  mzk.PatientPortal.BaseClass.RequestAccessTest - Starting UserRequestAccess test...
+16:38:25.550 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Starting login test...
+]]></system-out>
+    <system-err><![CDATA[---------------------------RequestAccess test Start--------------------------------
+---------------------------Login test Start--------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="UserRequestAccess" classname="mzk.PatientPortal.BaseClass.RequestAccessTest" time="62.878">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&apos;Email&apos;] (tried for 60 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='Email'] (tried for 60 second(s) with 500 milliseconds interval)
+	at mzk.PatientPortal.BaseClass.RequestAccessTest.UserRequestAccess(RequestAccessTest.java:30)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //*[@id='Email']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: unknown
+	at mzk.PatientPortal.BaseClass.RequestAccessTest.UserRequestAccess(RequestAccessTest.java:30)
+</failure>
+    <system-out><![CDATA[16:39:28.451 [main] INFO  mzk.PatientPortal.BaseClass.RequestAccessTest - Starting UserRequestAccess test...
+16:39:28.451 [main] INFO  mzk.PatientPortal.BaseClass.LoginTestClass - Starting login test...
+]]></system-out>
+    <system-err><![CDATA[---------------------------RequestAccess test Start--------------------------------
 ---------------------------Login test Start--------------------------------
 ]]></system-err>
   </testcase>

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,40 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">11 methods, 1 failed,  2 skipped,  8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="mzk.PatientPortal.BaseClass.InternationalPatientTest" class="method navigator-link" hash-for-method="InternationalPatientRegistration">InternationalPatientRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="mzk.PatientPortal.BaseClass.InternationalPatientTest" class="method navigator-link" hash-for-method="InternationalPatientRegistration">InternationalPatientRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="mzk.PatientPortal.BaseClass.RegistrationTest" class="method navigator-link" hash-for-method="registerPatient">registerPatient</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +135,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="mzk.PatientPortal.BaseClass.ForgotEmailTest" class="method navigator-link" hash-for-method="ForgotEmailID">ForgotEmailID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="mzk.PatientPortal.BaseClass.FamilyMembersTest" class="method navigator-link" hash-for-method="PatientFamilyMember">PatientFamilyMember</a> <!-- method navigator-link -->
@@ -117,6 +155,26 @@
                         <a href="#" panel-name="suite-Suite" title="mzk.PatientPortal.BaseClass.EmergencyContactTest" class="method navigator-link" hash-for-method="PoratlEmergencyContact">PoratlEmergencyContact</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="mzk.PatientPortal.BaseClass.PersonalDetailsTest" class="method navigator-link" hash-for-method="UserPersonalDetails">UserPersonalDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="mzk.PatientPortal.BaseClass.ProvideAccessTest" class="method navigator-link" hash-for-method="UserProvideAccess">UserProvideAccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="mzk.PatientPortal.BaseClass.RequestAccessTest" class="method navigator-link" hash-for-method="UserRequestAccess">UserRequestAccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="mzk.PatientPortal.BaseClass.RegistrationTest" class="method navigator-link" hash-for-method="registerPatient">registerPatient</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -129,6 +187,166 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">mzk.PatientPortal.BaseClass.InternationalPatientTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="InternationalPatientRegistration">
+                  </a> <!-- InternationalPatientRegistration -->
+                  <span class="method-name">InternationalPatientRegistration</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Both Text deos&apos;t Matched expected [Connect WithUs] but found [Connect With Us]
+	at mzk.PatientPortal.BaseClass.InternationalPatientTest.InternationalPatientRegistration(InternationalPatientTest.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">mzk.PatientPortal.BaseClass.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerPatient">
+                  </a> <!-- registerPatient -->
+                  <span class="method-name">registerPatient</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@class=&apos;page-headingh1 mb-0&apos;]&quot;}
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;HYDL-001375A&apos;, ip: &apos;172.22.11.67&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Users\BANDI~1.UJJ\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b8cea758c4f33c434e5d22c382097ff
+*** Element info: {Using=xpath, value=//h2[@class=&apos;page-headingh1 mb-0&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.getText(Unknown Source)
+	at mzk.PatientPortal.BaseClass.RegistrationTest.registerPatient(RegistrationTest.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">mzk.PatientPortal.BaseClass.InternationalPatientTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="InternationalPatientRegistration">
+                  </a> <!-- InternationalPatientRegistration -->
+                  <span class="method-name">InternationalPatientRegistration</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;HYDL-001375A&apos;, ip: &apos;172.22.11.67&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\Users\BANDI~1.UJJ\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b8cea758c4f33c434e5d22c382097ff
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.sendKeys(Unknown Source)
+	at mzk.PatientPortal.elements.InternationalPatient.Email(InternationalPatient.java:85)
+	at mzk.PatientPortal.BaseClass.InternationalPatientTest.InternationalPatientRegistration(InternationalPatientTest.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">mzk.PatientPortal.BaseClass.RegistrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerPatient">
+                  </a> <!-- registerPatient -->
+                  <span class="method-name">registerPatient</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">mzk.PatientPortal.BaseClass.PaymentCategoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PatientPaymentCategory">
+                  </a> <!-- PatientPaymentCategory -->
+                  <span class="method-name">PatientPaymentCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">mzk.PatientPortal.BaseClass.ProvideAccessTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserProvideAccess">
+                  </a> <!-- UserProvideAccess -->
+                  <span class="method-name">UserProvideAccess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">mzk.PatientPortal.BaseClass.ForgotEmailTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ForgotEmailID">
+                  </a> <!-- ForgotEmailID -->
+                  <span class="method-name">ForgotEmailID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -147,14 +365,29 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">mzk.PatientPortal.BaseClass.PaymentCategoryTest</span>
+              <span class="class-name">mzk.PatientPortal.BaseClass.RequestAccessTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="PatientPaymentCategory">
-                  </a> <!-- PatientPaymentCategory -->
-                  <span class="method-name">PatientPaymentCategory</span>
+                  <a name="UserRequestAccess">
+                  </a> <!-- UserRequestAccess -->
+                  <span class="method-name">UserRequestAccess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">mzk.PatientPortal.BaseClass.PersonalDetailsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserPersonalDetails">
+                  </a> <!-- UserPersonalDetails -->
+                  <span class="method-name">UserPersonalDetails</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -190,9 +423,15 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;mzk.PatientPortal.BaseClass.ForgotEmailTest&quot;/&gt;
+      &lt;class name=&quot;mzk.PatientPortal.BaseClass.ProvideAccessTest&quot;/&gt;
       &lt;class name=&quot;mzk.PatientPortal.BaseClass.PaymentCategoryTest&quot;/&gt;
+      &lt;class name=&quot;mzk.PatientPortal.BaseClass.InternationalPatientTest&quot;/&gt;
       &lt;class name=&quot;mzk.PatientPortal.BaseClass.EmergencyContactTest&quot;/&gt;
       &lt;class name=&quot;mzk.PatientPortal.BaseClass.FamilyMembersTest&quot;/&gt;
+      &lt;class name=&quot;mzk.PatientPortal.BaseClass.RegistrationTest&quot;/&gt;
+      &lt;class name=&quot;mzk.PatientPortal.BaseClass.RequestAccessTest&quot;/&gt;
+      &lt;class name=&quot;mzk.PatientPortal.BaseClass.PersonalDetailsTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -206,7 +445,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (9 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -232,24 +471,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'PatientPaymentCategory')
-data.setCell(0, 2, 'mzk.PatientPortal.BaseClass.PaymentCategoryTest')
-data.setCell(0, 3, 25717);
+data.setCell(0, 1, 'UserRequestAccess')
+data.setCell(0, 2, 'mzk.PatientPortal.BaseClass.RequestAccessTest')
+data.setCell(0, 3, 21861);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'PoratlEmergencyContact')
 data.setCell(1, 2, 'mzk.PatientPortal.BaseClass.EmergencyContactTest')
-data.setCell(1, 3, 15505);
+data.setCell(1, 3, 21180);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'PatientFamilyMember')
-data.setCell(2, 2, 'mzk.PatientPortal.BaseClass.FamilyMembersTest')
-data.setCell(2, 3, 7773);
+data.setCell(2, 1, 'UserPersonalDetails')
+data.setCell(2, 2, 'mzk.PatientPortal.BaseClass.PersonalDetailsTest')
+data.setCell(2, 3, 19052);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'PatientPaymentCategory')
+data.setCell(3, 2, 'mzk.PatientPortal.BaseClass.PaymentCategoryTest')
+data.setCell(3, 3, 17410);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'UserProvideAccess')
+data.setCell(4, 2, 'mzk.PatientPortal.BaseClass.ProvideAccessTest')
+data.setCell(4, 3, 15458);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ForgotEmailID')
+data.setCell(5, 2, 'mzk.PatientPortal.BaseClass.ForgotEmailTest')
+data.setCell(5, 3, 13118);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'InternationalPatientRegistration')
+data.setCell(6, 2, 'mzk.PatientPortal.BaseClass.InternationalPatientTest')
+data.setCell(6, 3, 12630);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'registerPatient')
+data.setCell(7, 2, 'mzk.PatientPortal.BaseClass.RegistrationTest')
+data.setCell(7, 3, 10536);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'PatientFamilyMember')
+data.setCell(8, 2, 'mzk.PatientPortal.BaseClass.FamilyMembersTest')
+data.setCell(8, 3, 8153);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'registerPatient')
+data.setCell(9, 2, 'mzk.PatientPortal.BaseClass.RegistrationTest')
+data.setCell(9, 3, 4489);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'InternationalPatientRegistration')
+data.setCell(10, 2, 'mzk.PatientPortal.BaseClass.InternationalPatientTest')
+data.setCell(10, 3, 2722);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 48 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -264,11 +535,65 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">16 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
+              <span class="ignored-class-name">mzk.PatientPortal.BaseClass.RegistrationTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">initBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">mzk.PatientPortal.BaseClass.PaymentCategoryTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">initBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">mzk.PatientPortal.BaseClass.ProvideAccessTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">initBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">mzk.PatientPortal.BaseClass.EmergencyContactTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">initBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">mzk.PatientPortal.BaseClass.RequestAccessTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">initBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">mzk.PatientPortal.BaseClass.PersonalDetailsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+                <span class="ignored-method-name">initBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">mzk.PatientPortal.BaseClass.InternationalPatientTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
@@ -293,35 +618,87 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">mzk.PatientPortal.BaseClass.PaymentCategoryTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">mzk.PatientPortal.BaseClass.ForgotEmailTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">initBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
+                <span class="method-name">ForgotEmailID</span>
+                <span class="method-start">10536 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">mzk.PatientPortal.BaseClass.ProvideAccessTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">UserProvideAccess</span>
+                <span class="method-start">23939 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">mzk.PatientPortal.BaseClass.PaymentCategoryTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
                 <span class="method-name">PatientPaymentCategory</span>
-                <span class="method-start">8278 ms</span>
+                <span class="method-start">39406 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">mzk.PatientPortal.BaseClass.InternationalPatientTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">InternationalPatientRegistration</span>
+                <span class="method-start">56822 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">InternationalPatientRegistration</span>
+                <span class="method-start">59561 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">mzk.PatientPortal.BaseClass.EmergencyContactTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">PoratlEmergencyContact</span>
-                <span class="method-start">34232 ms</span>
+                <span class="method-start">72746 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">mzk.PatientPortal.BaseClass.FamilyMembersTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">PatientFamilyMember</span>
-                <span class="method-start">49745 ms</span>
+                <span class="method-start">93933 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">mzk.PatientPortal.BaseClass.PaymentCategoryTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">mzk.PatientPortal.BaseClass.RegistrationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">registerPatient</span>
+                <span class="method-start">102090 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerPatient</span>
+                <span class="method-start">112639 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">mzk.PatientPortal.BaseClass.RequestAccessTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">UserRequestAccess</span>
+                <span class="method-start">117134 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">mzk.PatientPortal.BaseClass.PersonalDetailsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">UserPersonalDetails</span>
+                <span class="method-start">138999 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">mzk.PatientPortal.BaseClass.ForgotEmailTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">58332 ms</span>
+                <span class="method-start">158967 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

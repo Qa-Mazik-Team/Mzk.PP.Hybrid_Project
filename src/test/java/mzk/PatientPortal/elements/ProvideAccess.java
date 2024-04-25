@@ -53,7 +53,14 @@ public class ProvideAccess extends BaseTestClass {
 		}
 		
 	}
+	
+	@FindBy(xpath = "//h5[@class='text-transform responsive-reverse-tablet']")
+	WebElement Mzk_ProvideAccess;
 
+	public WebElement getProvideAccess() {
+		return Mzk_ProvideAccess;
+	}
+	
 	@FindBy(xpath = "//*[@id='Email']")
 	WebElement Mzk_Email;
 

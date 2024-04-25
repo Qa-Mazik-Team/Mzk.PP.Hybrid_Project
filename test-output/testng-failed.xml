@@ -7,13 +7,20 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="mzk.PatientPortal.BaseClass.EmergencyContactTest">
+      <class name="mzk.PatientPortal.BaseClass.RegistrationTest">
         <methods>
-          <include name="PoratlEmergencyContact"/>
           <include name="tearDown"/>
+          <include name="registerPatient"/>
           <include name="initBrowser"/>
         </methods>
-      </class> <!-- mzk.PatientPortal.BaseClass.EmergencyContactTest -->
+      </class> <!-- mzk.PatientPortal.BaseClass.RegistrationTest -->
+      <class name="mzk.PatientPortal.BaseClass.InternationalPatientTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InternationalPatientRegistration"/>
+          <include name="initBrowser"/>
+        </methods>
+      </class> <!-- mzk.PatientPortal.BaseClass.InternationalPatientTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,7 +1,11 @@
 package mzk.PatientPortal.BaseClass;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -15,6 +19,10 @@ public class BaseTestClass {
 
 	public static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
 	public static RemoteWebDriver dr;
+	
+	public static final Logger logger = LogManager.getLogger(EmergencyContactTest.class);
+	public static String timeStamp = new SimpleDateFormat("dd.MM.yyyy.HH.mm.ss").format(new Date());
+
 	@BeforeSuite
 	public void initBrowser() throws Throwable {
 

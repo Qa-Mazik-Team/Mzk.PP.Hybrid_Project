@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 3, Errors: 0, Skipped: 3, Time elapsed: 370.269 s <<< FAILURE! - in TestSuite
-PoratlEmergencyContact(mzk.PatientPortal.BaseClass.EmergencyContactTest)  Time elapsed: 62.978 s  <<< FAILURE!
+Tests run: 18, Failures: 9, Errors: 0, Skipped: 9, Time elapsed: 960.09 s <<< FAILURE! - in TestSuite
+PoratlEmergencyContact(mzk.PatientPortal.BaseClass.EmergencyContactTest)  Time elapsed: 62.891 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='Email'] (tried for 60 second(s) with 500 milliseconds interval)
 	at mzk.PatientPortal.BaseClass.EmergencyContactTest.PoratlEmergencyContact(EmergencyContactTest.java:26)
 Caused by: org.openqa.selenium.NoSuchElementException: 
@@ -13,7 +13,7 @@ System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os
 Driver info: driver.version: unknown
 	at mzk.PatientPortal.BaseClass.EmergencyContactTest.PoratlEmergencyContact(EmergencyContactTest.java:26)
 
-PatientFamilyMember(mzk.PatientPortal.BaseClass.FamilyMembersTest)  Time elapsed: 62.963 s  <<< FAILURE!
+PatientFamilyMember(mzk.PatientPortal.BaseClass.FamilyMembersTest)  Time elapsed: 62.9 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='Email'] (tried for 60 second(s) with 500 milliseconds interval)
 	at mzk.PatientPortal.BaseClass.FamilyMembersTest.PatientFamilyMember(FamilyMembersTest.java:25)
 Caused by: org.openqa.selenium.NoSuchElementException: 
@@ -24,7 +24,35 @@ System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os
 Driver info: driver.version: unknown
 	at mzk.PatientPortal.BaseClass.FamilyMembersTest.PatientFamilyMember(FamilyMembersTest.java:25)
 
-PatientPaymentCategory(mzk.PatientPortal.BaseClass.PaymentCategoryTest)  Time elapsed: 62.936 s  <<< FAILURE!
+ForgotEmailID(mzk.PatientPortal.BaseClass.ForgotEmailTest)  Time elapsed: 10.066 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()='Forgot Email/Mobile Number?']"}
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53468}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 93deac0454cff8c8d107f55bcc61099b
+*** Element info: {Using=xpath, value=//*[text()='Forgot Email/Mobile Number?']}
+	at mzk.PatientPortal.BaseClass.ForgotEmailTest.ForgotEmailID(ForgotEmailTest.java:28)
+
+InternationalPatientRegistration(mzk.PatientPortal.BaseClass.InternationalPatientTest)  Time elapsed: 41.23 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@href='/signup']' (tried for 30 second(s) with 500 milliseconds interval)
+	at mzk.PatientPortal.BaseClass.InternationalPatientTest.InternationalPatientRegistration(InternationalPatientTest.java:32)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@href='/signup']"}
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53468}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 93deac0454cff8c8d107f55bcc61099b
+*** Element info: {Using=xpath, value=//*[@href='/signup']}
+	at mzk.PatientPortal.BaseClass.InternationalPatientTest.InternationalPatientRegistration(InternationalPatientTest.java:32)
+
+PatientPaymentCategory(mzk.PatientPortal.BaseClass.PaymentCategoryTest)  Time elapsed: 62.914 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='Email'] (tried for 60 second(s) with 500 milliseconds interval)
 	at mzk.PatientPortal.BaseClass.PaymentCategoryTest.PatientPaymentCategory(PaymentCategoryTest.java:30)
 Caused by: org.openqa.selenium.NoSuchElementException: 
@@ -34,4 +62,52 @@ Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.
 System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
 Driver info: driver.version: unknown
 	at mzk.PatientPortal.BaseClass.PaymentCategoryTest.PatientPaymentCategory(PaymentCategoryTest.java:30)
+
+UserPersonalDetails(mzk.PatientPortal.BaseClass.PersonalDetailsTest)  Time elapsed: 62.939 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='Email'] (tried for 60 second(s) with 500 milliseconds interval)
+	at mzk.PatientPortal.BaseClass.PersonalDetailsTest.UserPersonalDetails(PersonalDetailsTest.java:28)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //*[@id='Email']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: unknown
+	at mzk.PatientPortal.BaseClass.PersonalDetailsTest.UserPersonalDetails(PersonalDetailsTest.java:28)
+
+UserProvideAccess(mzk.PatientPortal.BaseClass.ProvideAccessTest)  Time elapsed: 63.019 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='Email'] (tried for 60 second(s) with 500 milliseconds interval)
+	at mzk.PatientPortal.BaseClass.ProvideAccessTest.UserProvideAccess(ProvideAccessTest.java:29)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //*[@id='Email']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: unknown
+	at mzk.PatientPortal.BaseClass.ProvideAccessTest.UserProvideAccess(ProvideAccessTest.java:29)
+
+registerPatient(mzk.PatientPortal.BaseClass.RegistrationTest)  Time elapsed: 51.744 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //*[@href='/signup']' (tried for 40 second(s) with 500 milliseconds interval)
+	at mzk.PatientPortal.BaseClass.RegistrationTest.registerPatient(RegistrationTest.java:33)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[@href='/signup']"}
+  (Session info: chrome=124.0.6367.78)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.78, chrome: {chromedriverVersion: 124.0.6367.78 (a087f2dd364d..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53468}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 93deac0454cff8c8d107f55bcc61099b
+*** Element info: {Using=xpath, value=//*[@href='/signup']}
+	at mzk.PatientPortal.BaseClass.RegistrationTest.registerPatient(RegistrationTest.java:33)
+
+UserRequestAccess(mzk.PatientPortal.BaseClass.RequestAccessTest)  Time elapsed: 62.878 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id='Email'] (tried for 60 second(s) with 500 milliseconds interval)
+	at mzk.PatientPortal.BaseClass.RequestAccessTest.UserRequestAccess(RequestAccessTest.java:30)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //*[@id='Email']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'HYDL-001375A', ip: '172.22.11.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: driver.version: unknown
+	at mzk.PatientPortal.BaseClass.RequestAccessTest.UserRequestAccess(RequestAccessTest.java:30)
 

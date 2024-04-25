@@ -41,6 +41,56 @@ public class Readfile {
 		String Otpp = pro.getProperty("OTP");
 		return Otpp;
 	}
+
+	public String getExpiryYear() {
+		String year = pro.getProperty("EXPIRYYEAR");
+		return year;
+	}
+	
+	public String getLanguage() {
+		String Language = pro.getProperty("LANGUAGE");
+		return Language;
+	}
+
+	public String getAddress() {
+		String Address = pro.getProperty("ADDRESS");
+		return Address;
+	}
+
+	public String getEID() {
+		String eid = pro.getProperty("EMIRATESID");
+		return eid;
+	}
+
+	public String getEmailid() {
+		String eid = pro.getProperty("EMAILID");
+		return eid;
+	}
+
+	public String getFirstName() {
+		String Firstname = pro.getProperty("FIRSTNAME");
+		return Firstname;
+	}
+
+	public String getLastName() {
+		String Lastname = pro.getProperty("LASTNAME");
+		return Lastname;
+	}
+
+	public String getEIDNumber() {
+		String EIDnum = pro.getProperty("EIDNUMBER");
+		return EIDnum;
+	}
+
+	public String getDateOfBirth() {
+		String DateOfBirth = pro.getProperty("DOB");
+		return DateOfBirth;
+	}
+
+	public String getMobilenumber() {
+		String Mobilenumber = pro.getProperty("MOBILENUMBER");
+		return Mobilenumber;
+	}
 	
 	public String getEffectiveDate() {
 		String EffectiveDate = pro.getProperty("EFFECTIVEDATE");

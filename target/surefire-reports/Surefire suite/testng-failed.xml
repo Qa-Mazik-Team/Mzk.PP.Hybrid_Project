@@ -3,6 +3,20 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
+      <class name="mzk.PatientPortal.BaseClass.RequestAccessTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initBrowser"/>
+          <include name="UserRequestAccess"/>
+        </methods>
+      </class> <!-- mzk.PatientPortal.BaseClass.RequestAccessTest -->
+      <class name="mzk.PatientPortal.BaseClass.PersonalDetailsTest">
+        <methods>
+          <include name="UserPersonalDetails"/>
+          <include name="tearDown"/>
+          <include name="initBrowser"/>
+        </methods>
+      </class> <!-- mzk.PatientPortal.BaseClass.PersonalDetailsTest -->
       <class name="mzk.PatientPortal.BaseClass.FamilyMembersTest">
         <methods>
           <include name="tearDown"/>
@@ -10,6 +24,13 @@
           <include name="initBrowser"/>
         </methods>
       </class> <!-- mzk.PatientPortal.BaseClass.FamilyMembersTest -->
+      <class name="mzk.PatientPortal.BaseClass.ProvideAccessTest">
+        <methods>
+          <include name="UserProvideAccess"/>
+          <include name="tearDown"/>
+          <include name="initBrowser"/>
+        </methods>
+      </class> <!-- mzk.PatientPortal.BaseClass.ProvideAccessTest -->
       <class name="mzk.PatientPortal.BaseClass.EmergencyContactTest">
         <methods>
           <include name="tearDown"/>
@@ -17,6 +38,13 @@
           <include name="PoratlEmergencyContact"/>
         </methods>
       </class> <!-- mzk.PatientPortal.BaseClass.EmergencyContactTest -->
+      <class name="mzk.PatientPortal.BaseClass.InternationalPatientTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="InternationalPatientRegistration"/>
+          <include name="initBrowser"/>
+        </methods>
+      </class> <!-- mzk.PatientPortal.BaseClass.InternationalPatientTest -->
       <class name="mzk.PatientPortal.BaseClass.PaymentCategoryTest">
         <methods>
           <include name="tearDown"/>
@@ -24,6 +52,20 @@
           <include name="initBrowser"/>
         </methods>
       </class> <!-- mzk.PatientPortal.BaseClass.PaymentCategoryTest -->
+      <class name="mzk.PatientPortal.BaseClass.RegistrationTest">
+        <methods>
+          <include name="registerPatient"/>
+          <include name="tearDown"/>
+          <include name="initBrowser"/>
+        </methods>
+      </class> <!-- mzk.PatientPortal.BaseClass.RegistrationTest -->
+      <class name="mzk.PatientPortal.BaseClass.ForgotEmailTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="ForgotEmailID"/>
+          <include name="initBrowser"/>
+        </methods>
+      </class> <!-- mzk.PatientPortal.BaseClass.ForgotEmailTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

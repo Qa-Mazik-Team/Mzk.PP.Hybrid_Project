@@ -7,9 +7,15 @@
 	</listeners>
   <test thread-count="5" name="Test">
     <classes>
+      <class name="mzk.PatientPortal.BaseClass.ForgotEmailTest"/>
+      <class name="mzk.PatientPortal.BaseClass.ProvideAccessTest"/>
       <class name="mzk.PatientPortal.BaseClass.PaymentCategoryTest"/>
+      <class name="mzk.PatientPortal.BaseClass.InternationalPatientTest"/>
       <class name="mzk.PatientPortal.BaseClass.EmergencyContactTest"/>
       <class name="mzk.PatientPortal.BaseClass.FamilyMembersTest"/>
+      <class name="mzk.PatientPortal.BaseClass.RegistrationTest"/>
+      <class name="mzk.PatientPortal.BaseClass.RequestAccessTest"/>
+      <class name="mzk.PatientPortal.BaseClass.PersonalDetailsTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,10 +1,5 @@
 package mzk.PatientPortal.BaseClass;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -15,8 +10,6 @@ import mzk.portal.utils.Selenium_Functions;
 import mzk.portal.utils.TestData;
 
 public class EmergencyContactTest extends BaseTestClass {
-	String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-	private static final Logger logger = LogManager.getLogger(EmergencyContactTest.class);
 
 	@Test(retryAnalyzer = RetryAnalyzer.class)
 	public void PoratlEmergencyContact() throws Throwable {
